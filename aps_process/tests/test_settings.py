@@ -3,6 +3,8 @@ import os
 
 DEBUG = True
 
+USE_TZ = True
+
 SITE_ID = 1
 
 APP_ROOT = os.path.abspath(
@@ -46,13 +48,11 @@ EXTERNAL_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django.contrib.sites',
-    'django_jasmine',
     'django_nose',
 ]
 
 INTERNAL_APPS = [
     'aps_process',
-    'aps_process.tests.test_app',
 ]
 
 INSTALLED_APPS = EXTERNAL_APPS + INTERNAL_APPS
